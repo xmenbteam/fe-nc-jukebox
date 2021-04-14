@@ -35,7 +35,7 @@ Underneath the menu render a section that shows the user how many of each pizza 
 
 ## Components and Props
 
-Time to split our App up into separate components. Typically each component would be written in a separate file but for the sake of simplicity you can declare them all in `App.js` to get started.
+Time to split our App up into separate [components](https://reactjs.org/docs/components-and-props.html). Typically each component would be written in a separate file but for the sake of simplicity you can declare them all in `App.js` to get started.
 
 7. Create a new component called `Header`. Extract the existing `h1` tag into this component and render your new component. Your app should look the same as it did before.
 
