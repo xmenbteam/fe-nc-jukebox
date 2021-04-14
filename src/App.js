@@ -30,7 +30,6 @@ const App = () => {
                 className="menu-img"
               ></img>
               <p>{pizza.name}</p>
-              <button>+1</button>
             </li>
           );
         })}
