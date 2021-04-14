@@ -13,7 +13,7 @@ The pizza menu has been chosen for you with some basic css to get you started. W
 
 1. Your pizza parlour is going to accept social media likes from your users. Add some state to your `App` that will keep track of how many likes you've received. This value should start at 0 (we all gotta start somewhere!). Render this value from your state underneath your header.
 
-2. Time to feel good about ourselves. Add a button that when clicked will increase the number of like our page has received. The user should be able to click this button as many times as they like 👍
+2. Time to feel good about ourselves. Add a button that when clicked will increase the number of likes our page has received. The user should be able to click this button as many times as they like 👍.
 
 3. Next we're going to add the ability for our users to order a pizza. First thing we'll need is a way of keeping track of how many pizzas they've ordered. Add some state to your `App` to keep track of the users `basket`. The basket should be an object with the following keys:
 
@@ -53,4 +53,4 @@ Time to split our App up into separate components. Typically each component woul
 - Once this button is clicked the component should render a message informing the user of how many pizzas have been ordered.
 - Once the order is confirmed the button should be removed from the page. You will need to do some research into [conditional rendering](https://reactjs.org/docs/conditional-rendering.html) for this part. Think carefully about how your component will keep track of whether or not the button has been clicked yet.
 
-**Extra** Once an order is confirmed the user should no longer be able to change their order. Disable the order buttons so that once the order is confirmed they can no longer change their order.
+**Additional**: Once an order is confirmed the user should no longer be able to change their order. Disable the order buttons so that once the order is confirmed they can no longer change their order.
