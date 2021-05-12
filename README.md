@@ -19,7 +19,7 @@ The pizza menu has been chosen for you with some basic css to get you started. W
 
 ```js
 {
-  Margerhita: 0,
+  Margherita: 0,
   Veggie: 0,
   Pepperoni: 0
 }
