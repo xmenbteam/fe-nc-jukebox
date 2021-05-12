@@ -1,7 +1,7 @@
 const App = () => {
   const pizzas = [
     {
-      name: 'Margerhita',
+      name: 'Margherita',
       imageUrl:
         'https://cdn.pixabay.com/photo/2017/12/05/20/09/pizza-3000274_1280.jpg',
     },
