@@ -41,3 +41,7 @@ button:disabled {
   height: 10em;
   object-fit: cover;
 }
+
+.menu-special {
+  box-shadow: 0px 0px 8px 2px #007c00;
+}
