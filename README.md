@@ -7,50 +7,38 @@ Welcome to React and your very own pizza Parlour. To get up and running with thi
 - run `npm install` to install `react`, `react-dom`, `react-scripts` and their dependencies. (They are quite large and this may take a few minutes)
 - run `npm start` to serve the app on `localhost:3000`
 
-The pizza menu has been chosen for you with some basic css to get you started. Work through the tasks below in order to add additional functionality to your Pizza App.
+This repo has some hard coded data and css classes setup for you to work with in order to setup your pizza parlour.
 
-## Rendering and State
+For the purposes of this sprint all the data you will be working with will be static and won't change. This is for you to practice making React components, passing props and rendering a UI based on JS variables.
 
-1. Your pizza parlour is going to accept social media likes from your users. Add some state to your `App` that will keep track of how many likes you've received. This value should start at 0 (we all gotta start somewhere!). Render this value from your state underneath your header.
+In the future these variables will change over time with the use of React state but for today they will remain constant as the principles for rendering that data remain the same.
 
-2. Time to feel good about ourselves. Add a button that when clicked will increase the number of likes our page has received. The user should be able to click this button as many times as they like 👍.
+## Tasks
 
-3. Next we're going to add the ability for our users to order a pizza. First thing we'll need is a way of keeping track of how many pizzas they've ordered. Add some state to your `App` to keep track of the users `basket`. The basket should be an object with the following keys:
+1. Time to open up your shop. Replace the `shopOwner` variables value with your own name. Update the `h1` tag to render your name in front of the words Pizza Parlour so everybody knows who's the best chef in town. **nb** makes sure you use the value from the `shopOwner` and don't just hard code your name into the `h1` for the purpose of this exercise.
 
-```js
-{
-  Margherita: 0,
-  Veggie: 0,
-  Pepperoni: 0
-}
-```
+2. Now you've put your name to it, it's time to show the world what pizza you have for sale. Underneath your heading render and `unordered list` of `list items` for your pizzas. Each list item should contain a `h2` containing the pizzas name and an image of the pizza. Again make sure that you are generating these `list items` dynamically based on what's in the `pizzas` variable.
 
-Underneath the menu render a section that shows the user how many of each pizza they've added to their order. (These will all be zero for the time being).
+3. Those are some large pizzas! Add some CSS classes to your pizzas to present them in a nicer way. There are some pre-built classes in `index.css` of `menu-list`, `menu-item` and `menu-img` that you can use. Open your browsers dev tools and inspect the console. Make sure that you have no warnings from React. Resolve any warnings that React is giving you.
 
-4. Time to order some pizza! Add a button underneath each pizzas name. When clicked this button should add 1 to the relevant pizza in the `basket`. Think carefully about whether or not you will need the current state and how to get access to the right pizza.
+4. Before you go any further it's time to extract some of this rendering logic to separate components. Create a new functional Component called `Header`. Extract the `h1` that you are currently rendering to this new component but do not move the `shopOwner` variable. Pass this information to your new component via `props` instead. Everything should render on the page as it did before.
 
-5. Your users would like to know how many pizzas they've added to their order altogether. Add a total count of all the pizzas in the basket at the bottom.
+5. Create a new component called `Menu`. Extract the rendering your list of pizzas to this new component. As before everything should render just as it was and your `App` is rendering two child components.
 
-6. Add a cancel button next to each type of pizza in the basket. When clicked this button should remove all the pizzas of that type and reset them back to zero.
+6. Time for a daily special. Render the name of `todaysSpecial` inside of your `Menu` component above the list of available pizzas.
 
-## Components and Props
+7. In order to make todays special stand out from the list of pizzas add some styling to it. There is a pre-built class of `menu-special`. Add this to the relevant pizza so it looks different from the others.
 
-Time to split our App up into separate [components](https://reactjs.org/docs/components-and-props.html). Typically each component would be written in a separate file but for the sake of simplicity you can declare them all in `App.js` to get started.
+8. The next step is to show the user how many of each pizza they have ordered. Create a new component called `Basket` and render it underneath your `Menu`. This component should show the user how many of each pizza they've ordered according to the `basket` variable
 
-7. Create a new component called `Header`. Extract the existing `h1` tag into this component and render your new component. Your app should look the same as it did before.
+9. Add a total to your `Basket` telling the user how many pizzas they've ordered in total/
 
-8. Create a new component called `Menu`. This component should render the `ul` of pizzas. Think about what information the Menu component will need and which `props` to pass to it in order to receive that information.
-
-9. Create a new component called `Basket`. This component should render the basket section you created earlier. The state of basket should remain in your `App` and information should be passed to your components via `props`.
-
-10. Create a new component called `Likes`. This component should deal with all the likes functionality. It should render the current likes as well as the button to increase our likes. As this component will deal with all of the likes functionality, the state of likes should also be extracted into this component.
+10. This file is getting long. Time to extract each component to it's own file. Create a `components` directory inside of `src` and create a file for each of your components. A good naming convention is to name the files after the components themselves e.g. `Header.js`. Import each of your components into `App.js` and render them as you were before. Make sure that your app still renders correctly once you are done.
 
 ## Advanced
 
-11. Create a new component called `Confirmation`. Render this new component underneath your `Basket`.
+11. Your pizza parlour is going to accept social media likes from your users. Unlike all of the data we have used before this is going to be dynamic and change over time. Create a new component called `Likes` and render it above your `Menu`. This component should render the current number of likes (initially 0, we all gotta start somewhere!) and a button the users can click.
 
-- This component should render a button that allows your users to confirm their order.
-- Once this button is clicked the component should render a message informing the user of how many pizzas have been ordered.
-- Once the order is confirmed the button should be removed from the page. You will need to do some research into [conditional rendering](https://reactjs.org/docs/conditional-rendering.html) for this part. Think carefully about how your component will keep track of whether or not the button has been clicked yet.
+In order for the number of likes to be dynamic our component is going to need some `state`. Take a look at the [React Docs](https://reactjs.org/docs/hooks-intro.html) on the `useState hook` and research how to keep the number of likes you've received in state.
 
-**Additional**: Once an order is confirmed the user should no longer be able to change their order. Disable the order buttons so that once the order is confirmed they can no longer change their order.
+Time to feel good about ourselves. When the user clicks on the like button increase the number of likes our page has received. The user should be able to click this button as many times as they like 👍.
