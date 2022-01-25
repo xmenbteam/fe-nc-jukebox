@@ -42,3 +42,5 @@ In the future these variables will change over time with the use of React state 
 In order for the number of likes to be dynamic our component is going to need some `state`. Take a look at the [React Docs](https://reactjs.org/docs/hooks-intro.html) on the `useState hook` and research how to keep the number of likes you've received in state.
 
 Time to feel good about ourselves. When the user clicks on the like button increase the number of likes our page has received. The user should be able to click this button as many times as they like 👍.
+
+12. Excellent work getting this far 🙌 The variables you've been working with so far have been static and unable to change. Time to change that. Choose some of the data that is currently held in a variable and refactor your app to hold it in state instead. Add some buttons to your app that your users can click on to update the state of your app. What functionality you add is up to you but make sure you use the docs to figure out how the `useState` hook works and how to apply it to your situation. 
