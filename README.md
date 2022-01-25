@@ -29,9 +29,9 @@ In the future these variables will change over time with the use of React state 
 
 7. In order to make todays special stand out from the list of pizzas add some styling to it. There is a pre-built class of `menu-special`. Add this to the relevant pizza so it looks different from the others.
 
-8. The next step is to show the user how many of each pizza they have ordered. Create a new component called `Basket` and render it underneath your `Menu`. This component should show the user how many of each pizza they've ordered according to the `basket` variable
+8. The next step is to show the user how many of each pizza they have ordered. Create a new component called `Basket` and render it underneath your `Menu`. This component should show the user how many of each pizza they've ordered according to the `basket` variable.
 
-9. Add a total to your `Basket` telling the user how many pizzas they've ordered in total/
+9. Add a total to your `Basket` telling the user how many pizzas they've ordered in total.
 
 10. This file is getting long. Time to extract each component to it's own file. Create a `components` directory inside of `src` and create a file for each of your components. A good naming convention is to name the files after the components themselves e.g. `Header.js`. Import each of your components into `App.js` and render them as you were before. Make sure that your app still renders correctly once you are done.
 
