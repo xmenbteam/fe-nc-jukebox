@@ -27,7 +27,7 @@ In the future these variables will change over time with the use of React state 
 
 6. There's always that one song that gets stuck in your head. Render the name of `favSong` inside your new `Songs` component above the list of songs.
 
-7. In order to make todays special stand out from the list of pizzas add some styling to it. There is a pre-built class of `song-special`. Add this to the relevant track so that it looks different from the others.
+7. In order to highlight what the song of the moment is add some styling to it. There is a pre-built class of `song-special`. Add this to the relevant track so that it looks different from the others.
 
 8. The next step is to show the user how many times each song has been played. Create a new component called `PlayCounts` and render it underneath your `Songs`. This component should show the user how many of each pizza they've ordered according to the `playCounts` variable.
 
