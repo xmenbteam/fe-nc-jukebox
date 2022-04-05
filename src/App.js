@@ -1,5 +1,5 @@
 const App = () => {
-  const playListTitle = 'some cool playlist';
+  const playListTitle = 'My cool playlist';
   const songs = [
     {
       id: 1,
@@ -34,11 +34,11 @@ const App = () => {
     'Enter Sandman': 5,
     "Don't stop me now": 8,
   };
-  const favSong = "Don't stop me now";
+  const currentlyPlaying = "Don't stop me now";
 
   return (
     <div className="App">
-      <h1>NC JukeBox</h1>
+      <h1>React Intro</h1>
     </div>
   );
 };

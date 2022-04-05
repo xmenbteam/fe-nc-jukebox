@@ -15,7 +15,7 @@ In the future these variables will change over time with the use of React state 
 
 ## Tasks
 
-1. Time to setup your jukebox. Replace the `playListTitle` variables value with your own name. Update the `h1` tag to render the title of your playlist so that everybody knows just how good your music taste is. **nb** makes sure you use the value from the `playListTitle` and don't just hard code the title into the `h1` for the purpose of this exercise.
+1. Time to setup your jukebox. Replace the `playListTitle` variables value with a name for your playlist. Update the `h1` tag to render the title of your playlist so that everybody knows just how good your music taste is. **nb** makes sure you use the value from the `playListTitle` and don't just hard code the title into the `h1` for the purpose of this exercise.
 
 2. Now you've put a name to it, it's time to show the world what tracks are queued up. Underneath your heading render and `ordered list` of `list items` for your songs. Each list item should contain a `h2` containing the tracks title, a `p` tag with the artists name and an image of the album artwork. Again make sure that you are generating these `list items` dynamically based on what's in the `songs` variable.
 
@@ -23,13 +23,13 @@ In the future these variables will change over time with the use of React state 
 
 4. Before you go any further it's time to extract some of this rendering logic to separate components. Create a new functional Component called `Header`. Extract the `h1` that you are currently rendering to this new component but do not move the `playListTitle` variable. Pass this information to your new component via `props` instead. Everything should render on the page as it did before.
 
-5. Create a new component called `Songs`. Extract the rendering your list of pizzas to this new component. As before everything should render just as it was and your `App` is rendering two child components.
+5. Create a new component called `Songs`. Extract the rendering your list of songs to this new component. As before everything should render just as it was and your `App` is rendering two child components.
 
-6. There's always that one song that gets stuck in your head. Render the name of `favSong` inside your new `Songs` component above the list of songs.
+6. Time to show which song is currently being played. Render the `currentlyPlaying` song in your `Songs` component.
 
-7. In order to highlight what the song of the moment is add some styling to it. There is a pre-built class of `song-special`. Add this to the relevant track so that it looks different from the others.
+7. This doesn't stand out visually however. Add the pre-built class of `song-current` to the song that is being played from your list to highlight it.
 
-8. The next step is to show the user how many times each song has been played. Create a new component called `PlayCounts` and render it underneath your `Songs`. This component should show the user how many of each pizza they've ordered according to the `playCounts` variable.
+8. The next step is to show the user how many times each song has been played. Create a new component called `PlayCounts` and render it underneath your `Songs`. This component should show the user how many times each song has been played according to the `playCounts` variable.
 
 9. Add a total to your `PlayCounts` telling the user how many tracks have be played in total.
 
