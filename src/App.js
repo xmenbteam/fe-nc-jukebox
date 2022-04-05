@@ -1,35 +1,44 @@
 const App = () => {
-  const shopOwner = 'Some cool northcoder';
-  const pizzas = [
+  const playListTitle = 'some cool playlist';
+  const songs = [
     {
-      name: 'Margherita',
-      imageUrl:
-        'https://cdn.pixabay.com/photo/2017/12/05/20/09/pizza-3000274_1280.jpg',
-      orderCount: 1,
+      id: 1,
+      title: 'Dreams',
+      artist: 'Fleetwood Mac',
+      albumCover:
+        'https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG',
+      previewURL:
+        'https://open.spotify.com/embed/track/0ofHAoxe9vBkTCp2UQIavz?utm_source=generator',
     },
     {
-      name: 'Veggie',
-      imageUrl:
-        'https://cdn.pixabay.com/photo/2016/11/29/13/02/cheese-1869708_1280.jpg',
-      orderCount: 3,
+      id: 2,
+      title: 'Enter Sandman',
+      artist: 'Metallica',
+      albumCover:
+        'https://upload.wikimedia.org/wikipedia/en/2/2c/Metallica_-_Metallica_cover.jpg',
+      previewURL:
+        'https://open.spotify.com/embed/track/5sICkBXVmaCQk5aISGR3x1?utm_source=generator',
     },
     {
-      name: 'Pepperoni',
-      imageUrl:
-        'https://cdn.pixabay.com/photo/2020/02/04/12/14/pepperoni-4818019_1280.jpg',
-      orderCount: 2,
+      id: 3,
+      title: "Don't stop me now",
+      artist: 'Queen',
+      albumCover:
+        'https://upload.wikimedia.org/wikipedia/en/9/97/Queen-dont-stop-me-now-1979-6-s.jpg',
+      previewURL:
+        'https://open.spotify.com/embed/track/5T8EDUDqKcs6OSOwEsfqG7?utm_source=generator',
     },
   ];
-  const basket = {
-    Margherita: 1,
-    Veggie: 3,
-    Pepperoni: 2,
+  const playCounts = {
+    Dreams: 10,
+    'Enter Sandman': 5,
+    "Don't stop me now": 8,
   };
-  const todaysSpecial = 'Veggie';
+  const favSong = "Don't stop me now";
 
   return (
     <div className="App">
-      <h1>Pizza Parlour</h1>
+      <h1>NC JukeBox</h1>
     </div>
   );
 };
