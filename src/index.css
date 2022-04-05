@@ -24,7 +24,7 @@ button:disabled {
   background: #aaaaaa;
 }
 
-.menu-list {
+.song-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -32,16 +32,16 @@ button:disabled {
   padding: 0;
 }
 
-.menu-item {
+.song-item {
   margin: 1em;
 }
 
-.menu-img {
+.song-img {
   width: 10em;
   height: 10em;
   object-fit: cover;
 }
 
-.menu-special {
+.song-special {
   box-shadow: 0px 0px 8px 2px #007c00;
 }
