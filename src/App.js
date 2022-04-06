@@ -35,7 +35,7 @@ const App = () => {
       albumCover:
         "https://upload.wikimedia.org/wikipedia/en/c/cf/Sledgehammer_Cover.jpg",
       previewURL:
-        "https://open.spotify.com/track/029NqmIySn1kOY305AAhxT?si=a36b7d4e3f324363",
+        "https://open.spotify.com/embed/track/029NqmIySn1kOY305AAhxT?utm_source=generator",
     },
   ];
   const playCounts = {
