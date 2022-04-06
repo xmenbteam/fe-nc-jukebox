@@ -42,6 +42,7 @@ const App = () => {
     Dreams: 10,
     "Enter Sandman": 5,
     "Don't stop me now": 8,
+    "Sledgehammer": 11
   };
   const currentlyPlaying = "Don't stop me now";
 
