@@ -1,7 +1,6 @@
-import { currentlyPlaying, songs } from "../assets/data";
 import SongCard from "./SongCard";
 
-const Songs = () => {
+const Songs = ({ currentlyPlaying, songs }) => {
   const currentlyPlayingUrl = songs.reduce((url, { title, previewURL }) => {
     if (title === currentlyPlaying) url = previewURL;
     return url;
